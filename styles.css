@@ -2,20 +2,52 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f6d365, #fda085);
-    color: #333;
+    color: #ffffff;
+    background: #282828;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 900px;
     margin: 20px auto;
-    background: #fff;
+    
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
 }
+
+.wrapper-bar {
+    height: 48px;
+    background: linear-gradient(to right, #3517CE, #3517CE 45%, #8800D6 55%, #8800D6 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.wrapper-bar #website-name {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.4em;
+    flex-grow: 1;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.wrapper-bar .link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.wrapper-bar .link:hover {
+    color: #ffcc00;
+}
+
+
 
 @keyframes fadeIn {
     from {
@@ -36,7 +68,7 @@ header {
 header h1 {
     margin-bottom: 10px;
     font-size: 2.5em;
-    color: #283593;
+    color: #ffffff;
     animation: textSlideIn 1s ease-in-out;
 }
 
@@ -53,7 +85,7 @@ header h1 {
 
 header p {
     font-size: 1.1em;
-    color: #666;
+    color: #ffffff;
 }
 
 .section {
@@ -66,7 +98,7 @@ header p {
     border-bottom: 2px solid #283593;
     padding-bottom: 10px;
     font-size: 1.8em;
-    color: #283593;
+    color: #ffffff;
     position: relative;
 }
 
