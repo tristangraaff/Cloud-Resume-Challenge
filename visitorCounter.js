@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', async (event) => {
     async function incrementVisitorCount() {
         try {
             const response = await fetch('https://y0218osvh0.execute-api.eu-central-1.amazonaws.com/prod/', 
@@ -24,6 +24,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    incrementVisitorCount();
-    getVisitorCount();
+    await incrementVisitorCount();
+    await getVisitorCount();
 });
